@@ -1,0 +1,271 @@
+/* styles.css */
+
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* Menú hamburguesa (para pantallas pequeñas) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #8D1717;
+}
+
+/* Estilo general para todas las secciones */
+.section {
+    padding: 50px 20px; /* Menos padding interno */
+    margin-bottom: 5px; /* Menos margen inferior */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para la sección de comida */
+.comida-section .food-image {
+    margin-top: 60px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+.comida-section .info-box {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 300px;
+    margin-right: 150px;
+}
+
+/* Estilo para la sección de bebidas */
+.bebidas-section .beverages-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+.bebidas-section .info-box {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 300px;
+    margin-right: 150px;
+}
+
+/* Estilo para la sección de postres */
+.postres-section .desserts-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+.postres-section .info-box {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 300px;
+    margin-right: 150px;
+}
+
+/* Estilo para la sección de licores */
+.licores-section .liquors-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+.licores-section .info-box {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 300px;
+    margin-right: 150px;
+}
+
+/* Centrar el texto dentro de la caja de información */
+.info-box h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.btn {
+    font-family: 'Georgia', serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8D1717;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* Responsive design para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Estilo del botón flotante */
+.home-button {
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 30px; /* Espacio desde el borde inferior */
+    left: 20px; /* Espacio desde el borde izquierdo */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    background-color: transparent; /* Fondo transparente para solo mostrar la imagen */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilo de la imagen dentro del botón */
+.home-icon {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    border: none; /* Sin borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra si lo deseas */
+    transition: opacity 0.3s; /* Efecto de transición suave para la opacidad */
+}
+
+/* Opcional: Cambiar la opacidad cuando se pase el cursor sobre la imagen */
+.home-button:hover .home-icon {
+    opacity: 0.8; /* Cambia la opacidad al pasar el cursor */
+}
+
+#reservaButton {
+    position: fixed;
+    top: 70px; /* Ajusta la distancia desde la parte inferior */
+    right: 30px;   /* Ajusta la distancia desde la izquierda */
+    padding: 10px 20px;
+    background-color: #8D1717; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none;
+    font-size: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el botón esté en frente de otros elementos */
+}
+
+#reservaButton:hover {
+    background-color: #f8f8f8; /* Color de fondo cuando el botón está en hover */
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

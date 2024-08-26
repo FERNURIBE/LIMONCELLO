@@ -1,0 +1,843 @@
+/* Estilos globales para el body */
+body {
+    background-image: url(Fondo.png); /* Imagen de fondo de la página */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+}
+
+/* Estilo para el encabezado */
+header {
+    color: #fff; /* Color del texto en el encabezado */
+}
+
+/* Primera fila: barra superior */
+.top-bar {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    background-color: #ffffffd0; /* Fondo semitransparente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 3px 5px; /* Espaciado interno */
+    margin: 0; /* Elimina el margen */
+}
+
+/* Estilo para el ícono de accesibilidad */
+.accessibility-logo img {
+    max-height: 30px; /* Altura máxima del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+/* Estilo para el enlace "Nosotros" en la barra superior */
+.nosotros-link a {
+    color: #936728; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 18px; /* Tamaño de la fuente del enlace */
+    font-weight: bold; /* Negrita para el texto del enlace */
+}
+
+/* Estilo para el enlace "Nosotros" al pasar el ratón */
+.nosotros-link a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+/* Contenedor principal del encabezado */
+.header-container {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    padding: 10px 20px; /* Espaciado interno */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo para el logo */
+.logo img {
+    height: 230px; /* Altura del logo */
+    width: auto; /* Ajusta el ancho automáticamente */
+    max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+}
+
+/* Estilo para el menú de navegación */
+.navigation {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: flex-end; /* Alinea los elementos al final del contenedor */
+}
+
+/* Estilo para la lista del menú de navegación */
+.navigation nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    gap: 15px; /* Espacio entre los elementos de la lista */
+    margin-bottom: 10px; /* Margen inferior */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.navigation nav ul li a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #936728; /* Color del texto del enlace */
+    padding: 10px; /* Espaciado interno del enlace */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para los enlaces del menú de navegación al pasar el ratón */
+.navigation nav ul li a:hover {
+    color: #ffffff; /* Cambia el color del texto */
+    background-color: #8d1717c1; /* Cambia el color de fondo */
+}
+
+/* Sección de reservas */
+.reservation-section {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
+}
+
+/* Estilo para el título de la sección de reservas */
+.reservation-section h3 {
+    color: #936728; /* Color del texto del título */
+}
+
+/* Formulario de reservas */
+.reservation-form {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 10px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo para los menús desplegables en el formulario de reservas */
+.reservation-form select {
+    background-color: rgba(128, 128, 128, 0.3); /* Fondo semitransparente */
+    border: 1px solid #ccc; /* Borde del menú desplegable */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Estilo para el campo de fecha en el formulario de reservas */
+.reservation-form input[type="date"] {
+    background-color: rgba(9, 9, 9, 0.3); /* Fondo semitransparente */
+    border: 1px solid #ccc; /* Borde del campo de fecha */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Estilo para las opciones dentro del menú desplegable */
+.reservation-form option {
+    background-color: #ffffff; /* Fondo de las opciones del menú desplegable */
+}
+
+/* Estilo para las etiquetas en el formulario de reservas */
+.reservation-form label {
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+}
+
+/* Estilo para el botón en el formulario de reservas */
+.reservation-form button {
+    background-color: #8D1717; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+}
+
+/* Estilo para el botón en el formulario de reservas al pasar el ratón */
+.reservation-form button:hover {
+    background-color: #8D1717; /* Mantiene el color de fondo al pasar el ratón */
+}
+
+/* Contenedor del video */
+.video-container {
+    position: relative; /* Posiciona el contenedor de forma relativa */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
+    height: auto; /* Ajusta la altura automáticamente */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+/* Estilo para el video dentro del contenedor */
+.video-container video {
+    width: 100%; /* Ancho completo del video */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Overlay del video */
+.video-overlay {
+    position: absolute; /* Posiciona el overlay de forma absoluta */
+    top: 0; /* Alinea el overlay al top del contenedor */
+    left: 0; /* Alinea el overlay al left del contenedor */
+    width: 100%; /* Ancho completo del overlay */
+    height: 100%; /* Altura completa del overlay */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Alinea los elementos al centro */
+    justify-content: center; /* Alinea los elementos al centro */
+    color: #fff; /* Color del texto en el overlay */
+    text-align: center; /* Alinea el texto al centro */
+    background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+}
+
+/* Estilo para el texto de bienvenida en el overlay del video */
+.welcome-text {
+    font-size: 36px; /* Tamaño de la fuente del texto de bienvenida */
+    font-weight: normal; /* Peso normal de la fuente */
+    display: block; /* Muestra el texto en bloque */
+}
+
+/* Estilo para el texto "LIMONCELLO" en el overlay del video */
+.limoncello-text {
+    font-size: 72px; /* Tamaño de la fuente del texto "LIMONCELLO" */
+    font-weight: bold; /* Negrita para el texto */
+    font-family: 'Georgia', serif; /* Fuente serif para el texto */
+    display: block; /* Muestra el texto en bloque */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Contenedor para los íconos en el overlay del video */
+.icon-container {
+    position: absolute; /* Posiciona los íconos de forma absoluta */
+    bottom: 10px; /* Alinea los íconos al fondo del contenedor */
+    right: 10px; /* Alinea los íconos al lado derecho del contenedor */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los íconos en una columna */
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+/* Estilo para los íconos */
+.icon {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+/* Estilo específico para el ícono de WhatsApp */
+.whatsapp-icon {
+    width: 55px; /* Ancho del ícono de WhatsApp */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilo específico para el ícono de ubicación */
+.location-icon {
+    width: 30px; /* Ancho del ícono de ubicación */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilo para los íconos al pasar el ratón */
+.icon:hover {
+    opacity: 0.8; /* Reduce la opacidad al pasar el ratón */
+}
+
+/* Estilo para la sección del menú */
+#menu {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Alinea los elementos al centro */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Contenedor del contenido del menú */
+.menu-content {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo para la columna izquierda del menú */
+.menu-left, .menu-right {
+    flex: 1; /* Hace que cada columna ocupe el mismo espacio */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para la cuadrícula de imágenes en el menú */
+.image-grid {
+    display: grid; /* Usa una cuadrícula para las imágenes */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para los elementos individuales en la cuadrícula de imágenes */
+.image-item img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block; /* Muestra la imagen en bloque */
+}
+
+/* Contenedor de la imagen grande en el menú */
+.large-image-container {
+    position: relative; /* Posiciona el contenedor de forma relativa */
+}
+
+/* Estilo para la imagen grande en el menú */
+.large-image-container img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block; /* Muestra la imagen en bloque */
+}
+
+/* Contenedor de la superposición sobre la imagen grande */
+.overlay-content {
+    position: absolute; /* Posiciona la superposición de forma absoluta */
+    top: 10%; /* Alinea la superposición al 10% desde el top del contenedor */
+    left: 50%; /* Alinea la superposición al 50% desde el left del contenedor */
+    transform: translateX(-50%); /* Centra horizontalmente la superposición */
+    text-align: center; /* Alinea el texto al centro */
+    width: 80%; /* Ancho de la superposición */
+}
+
+/* Estilo para el texto de la leyenda en la superposición */
+.caption-text {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente negro */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 24px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el texto de la descripción en la superposición */
+.description-text {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente blanco */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para el botón de observar */
+.observe-button {
+    background-color: #8D1717; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de observar al pasar el ratón */
+.observe-button:hover {
+    background-color: #8D1717; /* Mantiene el color de fondo al pasar el ratón */
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    /* Ajusta el estilo de la barra superior en pantallas pequeñas */
+    .top-bar {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Alinea los elementos al centro */
+        gap: 10px; /* Espacio entre los elementos */
+    }
+
+    /* Ajusta el estilo del contenedor del encabezado en pantallas pequeñas */
+    .header-container {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    /* Ajusta el estilo del menú de navegación en pantallas pequeñas */
+    .navigation {
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    .navigation nav ul {
+        justify-content: center; /* Centra los elementos de la lista */
+    }
+
+    /* Ajusta el estilo del formulario de reservas en pantallas pequeñas */
+    .reservation-form {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    /* Ajusta el estilo de la sección de reservas en pantallas pequeñas */
+    .reservation-section {
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    /* Ajusta el estilo del overlay del video en pantallas pequeñas */
+    .video-overlay .welcome-text {
+        font-size: 24px; /* Tamaño de la fuente del texto de bienvenida */
+    }
+
+    .video-overlay .limoncello-text {
+        font-size: 36px; /* Tamaño de la fuente del texto "LIMONCELLO" */
+    }
+
+    .video-overlay p {
+        font-size: 18px; /* Tamaño de la fuente del párrafo */
+    }
+
+    /* Ajusta el estilo del contenido del menú en pantallas pequeñas */
+    .menu-content {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    .menu-left, .menu-right {
+        width: 100%; /* Ancho completo de cada columna */
+    }
+
+    /* Ajusta el estilo de la superposición en la imagen grande en pantallas pequeñas */
+    .overlay-content {
+        top: 20%; /* Alinea la superposición al 20% desde el top del contenedor */
+        width: 90%; /* Ancho de la superposición */
+    }
+}
+
+.oval-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.oval-background {
+    position: relative;
+    background-image: url('imagen\ dentro\ del\ recntangulo\ de\ nuestras\ sedes.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 60px;
+    border-radius: 50px 0 0 50px;
+    width: 400px;
+    margin-right: 0;
+    margin-left: auto;
+    overflow: hidden; /* Asegura que la superposición no se salga del contenedor */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad para oscurecer la imagen */
+    z-index: 1; /* Coloca la superposición encima de la imagen de fondo */
+}
+
+.oval-text {
+    position: relative;
+    z-index: 2; /* Coloca el texto encima de la superposición */
+    color: #D4A373;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Serif';
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.location-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.location-card.small {
+    padding: 10px;
+}
+
+.location-title {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.location-info {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.map {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .location-title {
+        font-size: 1.2rem;
+    }
+
+    .location-card, .location-card.small {
+        padding: 10px;
+    }
+
+    .map iframe {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .map iframe {
+        height: 100px;
+    }
+}
+
+.sabor-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea al lado izquierdo */
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sabor-background {
+    position: relative;
+    background-image: url('imagen\ dentro\ del\ rectangulo\ de\ secccion\ sabor\ y\ tradicion.jpg'); /* Ruta ajustada */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 60px;
+    border-radius: 0 50px 50px 0; /* Parte recta a la izquierda, ovalada a la derecha */
+    width: 400px;
+    margin-left: 0; /* Alineación ajustada */
+    margin-right: auto;
+    overflow: hidden; /* Asegura que la superposición no se salga del contenedor */
+}
+
+.sabor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad para oscurecer la imagen */
+    z-index: 1; /* Coloca la superposición encima de la imagen de fondo */
+}
+
+.sabor-text {
+    position: relative;
+    z-index: 2; /* Coloca el texto encima de la superposición */
+    color: #D4A373;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Serif';
+}
+
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Slider */
+#container-slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px; /* Añade padding para crear espacio a ambos lados */
+}
+
+#slider {
+    position: relative;
+    display: block;
+    width: calc(100% - 30px); /* Ajusta el ancho si has añadido padding */
+    height: 70vh; /* Ajusta la altura según tus necesidades */
+    min-height: 400px; /* Ajusta el mínimo tamaño si es necesario */
+    margin: 0 auto;
+}
+
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#container-slider .arrowPrev, #container-slider .arrowNext {
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+}
+
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+
+.content_slider {
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.content_slider div {
+    text-align: center;
+}
+
+.content_slider h2 {
+    font-family: 'serif';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content_slider p {
+    font-size: 14pt;
+    font-family: 'Georgia';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.btnSlider {
+    color: #FFF; /* Color del texto */
+    font-size: 15pt; /* Tamaño de la fuente */
+    font-family: 'serif'; /* Tipografía */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    padding: 10px 50px; /* Espacio interior del botón */
+    border: 1px solid #560404; /* Color y grosor del borde */
+    background: rgb(141, 23, 23); /* Color de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina subrayado */
+    transition: .5s all; /* Transición suave */
+}
+
+.btnSlider:hover {
+    background: #ffffff; /* Color de fondo al pasar el cursor */
+    border: 3px solid #ffffff; /* Color del borde al pasar el cursor */
+    color: #000000; /* Color del texto al pasar el cursor */
+}
+
+.listslider {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item-select-slid {
+    background: #FFF !important;
+}
+
+@media screen and (max-width: 460px) {
+    .content_slider h2 {
+        font-size: 15pt !important;
+    }
+    .content_slider p {
+        font-size: 12pt !important;
+    }
+    #container-slider .arrowPrev, #container-slider .arrowNext {
+        font-size: 20pt;
+    }
+    #container-slider .arrowPrev {
+        left: 15px;
+    }
+    #container-slider .arrowNext {
+        right: 15px !important;
+    }
+    #slider {
+        height: 400px;
+        min-height: 400px;
+    }
+    .btnSlider {
+        padding: 10px 30px;
+        font-size: 10pt;
+    }
+}
+
+/* Estilo para la sección de imagen */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background-image: url('imagen.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+/* Estilo para el contenido centrado dentro de la sección */
+.image-section .content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre el rectángulo azul */
+}
+
+/* Estilo para el título */
+.image-section h2 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(224, 190, 142);
+}
+
+/* Estilo para el logo */
+.image-section .logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Estilo para el botón de reserva */
+.image-section button {
+    background-color: #8D1717;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block; /* Asegura que el botón se comporte como un bloque */
+    margin-left: auto; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+}
+
+/* Estilo para el rectángulo azul que se difumina */
+.image-section .blue-rectangle {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    background: linear-gradient(to top, rgb(17, 24, 39), rgba(17, 24, 39, 0) 80%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Coloca el rectángulo azul debajo del contenido */
+}
+
+/* Estilo para la sección de redes sociales */
+.follow-section {
+    width: 100%;
+    margin-top: 20px; /* Añade un margen superior para separar las secciones */
+}
+
+/* Estilo para el contenedor de texto de redes sociales */
+.image-section .follow-socials {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px; /* Espacio entre el texto y los iconos */
+}
+
+/* Estilo para el texto de "Síguenos en nuestras redes sociales" */
+.image-section .follow-us {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: #E0BE8E;
+}
+
+/* Estilo para el contenedor de redes sociales */
+.follow-section {
+    position: relative; /* Asegura que el contenedor permita el posicionamiento absoluto de los iconos */
+}
+
+/* Estilo para los iconos sociales */
+.follow-section .social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinea los iconos a la derecha */
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde el lado derecho */
+    z-index: 2; /* Asegura que los iconos estén sobre el rectángulo azul */
+}
+
+/* Estilo individual para los enlaces de iconos */
+.follow-section .social-icons a {
+    display: inline-block; /* Permite el ajuste del tamaño de los iconos */
+    margin-left: 10px; /* Maneja la distancia entre los iconos */
+}
+
+/* Estilo individual para las imágenes de iconos */
+.follow-section .social-icons img {
+    width: 42px; /* Ajusta el tamaño base de los iconos */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo individual para el icono de Facebook */
+.follow-section .social-icons .btnFacebook img {
+    width: 70px; /* Tamaño más grande específico para Facebook */
+}
+

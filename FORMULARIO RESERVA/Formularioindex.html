@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="STYLES2.CSS">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <div class="title-column">
+                <h1>Agenda tu reserva!</h1>
+                <p>Digita toda la información necesaria, te esperamos...</p>
+            </div>
+            <div class="logo-column">
+                <img src="LOGO_LIMONCELLO_page-0001-removebg-e1685581898356.png" alt="Logo del Restaurante" class="logo">
+            </div>
+        </div>
+
+        <!-- Sección de Reserva -->
+        <form class="reservation-form">
+            <h2>Información de la Reserva</h2>
+            <div class="form-group">
+                <label for="personas">Cantidad Personas*</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" required>
+            </div>
+            <div class="form-group">
+                <label for="sede">Sede*</label>
+                <select id="sede" name="sede" required>
+                    <option value="El Trapiche">El Trapiche</option>
+                    <!-- Agrega más opciones si es necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha*</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora*</label>
+                <input type="time" id="hora" name="hora" min="14:00" max="22:00" required>
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones (Opcional)</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+            </div>
+
+            <h2>Información Personal</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido*</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico*</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento*</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono*</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <!-- Botón de envío del formulario -->
+            <button type="submit" onclick="alert('Reservación enviada')">Reservar</button>
+        </form>
+
+        <!-- Botón para ir a la página principal -->
+        <a href="../index.html" class="home-button">
+            <img src="home_circle_outline_icon_139029.png" alt="Home" class="home-icon">
+        </a>
+    </div>
+</body>
+</html>

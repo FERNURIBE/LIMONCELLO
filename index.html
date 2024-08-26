@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMONCELLO</title>
+    <link rel="stylesheet" href="Styles.css">
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="top-bar">
+            <div class="accessibility-logo">
+                <a href="#" onclick="alert('¡Oops! Funcionalidad no disponible aún.')">
+                    <img src="menu accesibilidad.png" alt="Icono de Accesibilidad">
+                </a>
+            </div>
+            
+            <div class="nosotros-link">
+                <a href="#" onclick="alert('¡Oops! Funcionalidad no disponible aún.')">NOSOTROS</a>
+            </div>
+        </div>
+    </header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="LOGO_LIMONCELLO_page-0001-removebg-e1685581898356.png" alt="Logo de Limoncello">
+            </div>
+
+            <!-- Menú de Navegación -->
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="PAGINA MENU/MENU.html">MENÚ</a></li>
+                        <li><a href="FORMULARIO RESERVA/Formularioindex.html">RESERVAS</a></li>
+                        <li><a href="#sedes">SEDES</a></li>
+                        <li><a href="#" onclick="alert('¡Oops! Funcionalidad no disponible aún.')">GALERÍA</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Sección de Reservas -->
+                <div class="reservation-section">
+                    <h3>Realiza tu reserva</h3>
+                    <form action="#formulario-reservas" method="get" class="reservation-form">
+                        <label for="personas">Número de Personas:</label>
+                        <select id="personas" name="personas" required>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Personas</option>
+                            <option value="3">3 Personas</option>
+                            <option value="4">4 Personas</option>
+                            <option value="more">Más...</option>
+                        </select>
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+                        <label for="hora">Hora:</label>
+                        <select id="hora" name="hora" required>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+
+                        <button onclick="alert('Reservación enviada')">RESERVA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section id="bienvenida">
+            <div class="video-container">
+                <video src="Video seccion 2.mp4" autoplay muted loop></video>
+                <div class="video-overlay">
+                    <h1>
+                        <span class="welcome-text">Bienvenidos a</span><br>
+                        <span class="limoncello-text">LIMONCELLO</span>
+                    </h1>
+                    <p>COMER | DISFRUTAR | REÍR</p>
+                    <div class="icon-container">
+                        <a href="https://api.whatsapp.com/send/?phone=573115639536&text=Hola+Limoncello+%28Sede+Trapiche%29%0D%0A...&type=phone_number&app_absent=0">
+                            <img src="vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930622.png" alt="WhatsApp" class="icon whatsapp-icon">
+                        </a>
+                        <a href="#sedes">
+                            <a href="#sedes"><img src="icono ubicacion.png" alt="Ubicación"></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="menu-content">
+                <!-- Primera Columna -->
+                <div class="menu-left">
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="nuestra carta 1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="image-item">
+                            <img src="nuestra carta 2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="image-item">
+                            <img src="nuestra carta 3.jpg" alt="Imagen 3">
+                        </div>
+                        <div class="image-item">
+                            <img src="nuestra carta 4.png" alt="Imagen 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-right">
+                    <div class="large-image-container">
+                        <img src="nuestra carta imagen grande detras del texto.jpg" alt="Imagen Grande">
+                        <div class="overlay-content">
+                            <div class="caption-text">NUESTRA CARTA</div>
+                            <div class="description-text">Todos nuestros ingredientes son especialmente seleccionados y usamos un gran porcentaje de materia prima importada, buscando siempre que el producto final sea de excelente calidad.</div>
+                           
+                            <button onclick="window.location.href='PAGINA MENU/MENU.html'" class="observe-button">Observar Más</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sedes">
+            <div class="oval-container">
+                <div class="oval-background">
+                    <div class="overlay"></div>
+                    <span class="oval-text">NUESTRAS SEDES</span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="column">
+                    <div class="location-card">
+                        <div class="location-title">SEDE DEL TRAPICHE</div>
+                        <div class="image-container">
+                            <img src="imagen 1.jpg" alt="Imagen de la sede del Trapiche">
+                        </div>
+                        <div class="location-info">
+                            Villavicencio, Meta<br>
+                            Calle 15 # 4-16 El Trapiche
+                        </div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7958.849411572193!2d-73.644863!3d4.136554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2e067ff46e9f%3A0x16830ca5c333ade1!2sCl.%2015%20%2344-116%2C%20Villavicencio%2C%20Meta!5e0!3m2!1ses!2sco!4v1723861596825!5m2!1ses!2sco" 
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="location-card small">
+                        <div class="location-title">SEDE VIVA</div>
+                        <div class="location-info">
+                            Próximamente...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section>
+            <div class="sabor-container">
+                <div class="sabor-background">
+                    <div class="sabor-overlay"></div>
+                    <span class="sabor-text">SABOR Y TRADICIÓN</span>
+                </div>
+            </div>
+            <section id="container-slider">    
+                <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                    <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                    <li><a itlist="itList_1" href="#"></a></li>
+                    <li><a itlist="itList_2" href="#"></a></li>
+                    <li><a itlist="itList_3" href="#"></a></li>
+                </ul>
+                <ul id="slider">
+                    <li style="background-image: url('carrusel\ 1.jpg'); z-index:0; opacity: 1;">
+                        <div class="content_slider">
+                            <div>
+                                <h2>COCTELES</h2>
+                                <button class="btnSlider" onclick="window.location.href='PAGINA MENU/LICORES/Licoreslimoncello.html'">COCTELES</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('carrusel\ 2.jpg');">
+                        <div class="content_slider">
+                            <div>
+                                <h2>PASTA DE LA CASA</h2>
+                                <p>La PASTA DE LA CASA LIMONCELLO, sera de los sabores más exquisitos que vas a encontrar en Limoncello.</p>
+                                <button class="btnSlider" onclick="window.location.href='PAGINA MENU/COMIDAS/Comidaslimoncello.html#pastas'">PASTAS</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('carrusel\ 3.jpg');">
+                        <div class="content_slider">
+                            <div>
+                                <h2>PULPO</h2>
+                                <button class="btnSlider" onclick="window.location.href='PAGINA MENU/COMIDAS/Comidaslimoncello.html#pescados'">PESCADOS</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('carrusel\ 4.jpg');">
+                        <div class="content_slider">
+                            <div>
+                                <h2>PIZZA ANGELA</h2>
+                                <p>Nuestra PIZZA ÁNGELA fue inspirada en la Toscana Italina donde se elaboran vino y brandis, de ahí la preservación de la ciruela en brandi mezclada con queso azul y tocino para dar una explosión de sabor en tu boca.</p>
+                                <button class="btnSlider" onclick="window.location.href='PAGINA MENU/COMIDAS/Comidaslimoncello.html#pizzas'">PIZZAS</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="image-section">
+            <!-- Contenedor para la imagen y el rectángulo azul -->
+            <div class="image-wrapper">
+            
+                <div class="blue-rectangle"></div>
+            </div>
+            <div class="content">
+                <!-- Título de reserva -->
+                <h2>REALIZA TU RESERVA</h2>
+                <img src="icono limon seccion 6.png" alt="Logo" class="logo">
+                <!-- Botón de reserva -->
+                <button onclick="window.location.href='FORMULARIO RESERVA/Formularioindex.html'">RESERVA</button>
+
+            </div>
+        
+            <!-- Contenedor para redes sociales -->
+            <div class="follow-section">
+                <div class="follow-socials">
+                    <p class="follow-us">SÍGUENOS EN</p>
+                    <p class="follow-us">NUESTRAS REDES SOCIALES</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com" class="btnFacebook" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="mailto:example@gmail.com"><img src="email.png" alt="Email"></a>
+                </div>
+            </div>
+        </section>
+                
+    
+     <script src="Script.js"></script>
+        <footer>
+            <p>&copy; 2024 LIMONCELLO. Todos los derechos reservados.</p>
+        </footer>
+</body>
+</html>
+    
